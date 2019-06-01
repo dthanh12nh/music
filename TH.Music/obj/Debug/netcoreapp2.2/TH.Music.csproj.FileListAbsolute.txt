@@ -1,0 +1,14 @@
+D:\Projects\TH.Music\TH.Music\bin\Debug\netcoreapp2.2\TH.Music.deps.json
+D:\Projects\TH.Music\TH.Music\bin\Debug\netcoreapp2.2\TH.Music.runtimeconfig.json
+D:\Projects\TH.Music\TH.Music\bin\Debug\netcoreapp2.2\TH.Music.runtimeconfig.dev.json
+D:\Projects\TH.Music\TH.Music\bin\Debug\netcoreapp2.2\TH.Music.dll
+D:\Projects\TH.Music\TH.Music\bin\Debug\netcoreapp2.2\TH.Music.pdb
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.csprojAssemblyReference.cache
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.csproj.CoreCompileInputs.cache
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.RazorAssemblyInfo.cache
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.RazorAssemblyInfo.cs
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.AssemblyInfoInputs.cache
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.AssemblyInfo.cs
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.RazorTargetAssemblyInfo.cache
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.dll
+D:\Projects\TH.Music\TH.Music\obj\Debug\netcoreapp2.2\TH.Music.pdb
