@@ -1,0 +1,13 @@
+D:\Projects\Music\Music\bin\Debug\netcoreapp2.2\Th.Music.deps.json
+D:\Projects\Music\Music\bin\Debug\netcoreapp2.2\Th.Music.runtimeconfig.json
+D:\Projects\Music\Music\bin\Debug\netcoreapp2.2\Th.Music.runtimeconfig.dev.json
+D:\Projects\Music\Music\bin\Debug\netcoreapp2.2\Th.Music.dll
+D:\Projects\Music\Music\bin\Debug\netcoreapp2.2\Th.Music.pdb
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.csproj.CoreCompileInputs.cache
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.RazorAssemblyInfo.cache
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.RazorAssemblyInfo.cs
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.AssemblyInfoInputs.cache
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.AssemblyInfo.cs
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.RazorTargetAssemblyInfo.cache
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Th.Music.dll
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Th.Music.pdb
