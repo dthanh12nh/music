@@ -11,3 +11,4 @@ D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.AssemblyInfo.cs
 D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.RazorTargetAssemblyInfo.cache
 D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Th.Music.dll
 D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Th.Music.pdb
+D:\Projects\Music\Music\obj\Debug\netcoreapp2.2\Music.csprojAssemblyReference.cache
