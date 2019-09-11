@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\Projects\\Music\\Music\\Music.csproj",
         "projectName": "Th.Music",
         "projectPath": "D:\\Projects\\Music\\Music\\Music.csproj",
-        "packagesPath": "C:\\Users\\Thanh\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\dthan\\.nuget\\packages\\",
         "outputPath": "D:\\Projects\\Music\\Music\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
