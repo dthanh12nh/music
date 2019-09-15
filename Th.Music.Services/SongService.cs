@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Th.Music.Dtos;
@@ -18,6 +19,7 @@ namespace Th.Music.Services
             _songRepository = songRepository;
         }
 
+        [HttpPost]
         public IResponse Add(SongDto dto)
         {
             var validator = new SongValidator(dto);

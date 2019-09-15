@@ -10,7 +10,8 @@
         "dependencies": {
           "Th.Music.IRepositories": "1.0.0",
           "Th.Music.IServices": "1.0.0",
-          "Th.Music.Validators": "1.0.0"
+          "Th.Music.Validators": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.0.0"
         },
         "runtime": {
           "Th.Music.Services.dll": {}
@@ -405,6 +406,14 @@
         "runtime": {
           "Th.Music.Validators.dll": {}
         }
+      },
+      "Microsoft.AspNetCore.Mvc.Core/2.2.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Mvc.Core.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
       }
     }
   },
@@ -735,6 +744,11 @@
     },
     "Th.Music.Validators/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Core/2.2.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

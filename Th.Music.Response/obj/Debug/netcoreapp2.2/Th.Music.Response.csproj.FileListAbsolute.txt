@@ -1,6 +1,7 @@
 D:\Projects\Music\Th.Music.Response\bin\Debug\netcoreapp2.2\Th.Music.Response.deps.json
 D:\Projects\Music\Th.Music.Response\bin\Debug\netcoreapp2.2\Th.Music.Response.dll
 D:\Projects\Music\Th.Music.Response\bin\Debug\netcoreapp2.2\Th.Music.Response.pdb
+D:\Projects\Music\Th.Music.Response\obj\Debug\netcoreapp2.2\Th.Music.Response.csprojAssemblyReference.cache
 D:\Projects\Music\Th.Music.Response\obj\Debug\netcoreapp2.2\Th.Music.Response.csproj.CoreCompileInputs.cache
 D:\Projects\Music\Th.Music.Response\obj\Debug\netcoreapp2.2\Th.Music.Response.AssemblyInfoInputs.cache
 D:\Projects\Music\Th.Music.Response\obj\Debug\netcoreapp2.2\Th.Music.Response.AssemblyInfo.cs
