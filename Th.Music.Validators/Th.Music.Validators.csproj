@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Th.Music.Dtos\Th.Music.Dtos.csproj" />
+    <ProjectReference Include="..\Th.Music.IServices\Th.Music.IServices.csproj" />
+  </ItemGroup>
+
+</Project>

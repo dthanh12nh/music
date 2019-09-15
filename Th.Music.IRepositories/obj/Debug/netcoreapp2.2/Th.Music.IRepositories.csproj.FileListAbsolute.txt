@@ -1,0 +1,12 @@
+D:\Projects\Music\Th.Music.IRepositories\bin\Debug\netcoreapp2.2\Th.Music.IRepositories.deps.json
+D:\Projects\Music\Th.Music.IRepositories\bin\Debug\netcoreapp2.2\Th.Music.IRepositories.dll
+D:\Projects\Music\Th.Music.IRepositories\bin\Debug\netcoreapp2.2\Th.Music.IRepositories.pdb
+D:\Projects\Music\Th.Music.IRepositories\bin\Debug\netcoreapp2.2\Th.Music.Entities.dll
+D:\Projects\Music\Th.Music.IRepositories\bin\Debug\netcoreapp2.2\Th.Music.Entities.pdb
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.csprojAssemblyReference.cache
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.csproj.CoreCompileInputs.cache
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.AssemblyInfoInputs.cache
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.AssemblyInfo.cs
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.csproj.CopyComplete
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.dll
+D:\Projects\Music\Th.Music.IRepositories\obj\Debug\netcoreapp2.2\Th.Music.IRepositories.pdb

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>Th.Music</RootNamespace>
+    <AssemblyName>Th.Music</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Th.Music.IRepositories\Th.Music.IRepositories.csproj" />
+    <ProjectReference Include="..\Th.Music.IServices\Th.Music.IServices.csproj" />
+    <ProjectReference Include="..\Th.Music.Repositories\Th.Music.Repositories.csproj" />
+    <ProjectReference Include="..\Th.Music.Services\Th.Music.Services.csproj" />
+  </ItemGroup>
+
+</Project>

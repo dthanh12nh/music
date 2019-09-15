@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Th.Music.Dtos\Th.Music.Dtos.csproj" />
+    <ProjectReference Include="..\Th.Music.Response\Th.Music.Response.csproj" />
+  </ItemGroup>
+
+</Project>

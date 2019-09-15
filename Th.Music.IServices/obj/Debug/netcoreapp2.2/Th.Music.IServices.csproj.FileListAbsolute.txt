@@ -1,0 +1,16 @@
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.IServices.deps.json
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.IServices.dll
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.IServices.pdb
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.Dtos.dll
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.Entities.dll
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.Dtos.pdb
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.Entities.pdb
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.csprojAssemblyReference.cache
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.csproj.CoreCompileInputs.cache
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.AssemblyInfoInputs.cache
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.AssemblyInfo.cs
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.csproj.CopyComplete
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.dll
+D:\Projects\Music\Th.Music.IServices\obj\Debug\netcoreapp2.2\Th.Music.IServices.pdb
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.Response.dll
+D:\Projects\Music\Th.Music.IServices\bin\Debug\netcoreapp2.2\Th.Music.Response.pdb

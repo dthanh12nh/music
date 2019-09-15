@@ -1,0 +1,12 @@
+D:\Projects\Music\Th.Music.Dtos\bin\Debug\netcoreapp2.2\Th.Music.Dtos.deps.json
+D:\Projects\Music\Th.Music.Dtos\bin\Debug\netcoreapp2.2\Th.Music.Dtos.dll
+D:\Projects\Music\Th.Music.Dtos\bin\Debug\netcoreapp2.2\Th.Music.Dtos.pdb
+D:\Projects\Music\Th.Music.Dtos\bin\Debug\netcoreapp2.2\Th.Music.Entities.dll
+D:\Projects\Music\Th.Music.Dtos\bin\Debug\netcoreapp2.2\Th.Music.Entities.pdb
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.csprojAssemblyReference.cache
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.csproj.CoreCompileInputs.cache
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.AssemblyInfoInputs.cache
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.AssemblyInfo.cs
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.csproj.CopyComplete
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.dll
+D:\Projects\Music\Th.Music.Dtos\obj\Debug\netcoreapp2.2\Th.Music.Dtos.pdb

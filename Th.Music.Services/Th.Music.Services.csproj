@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Th.Music.IRepositories\Th.Music.IRepositories.csproj" />
+    <ProjectReference Include="..\Th.Music.IServices\Th.Music.IServices.csproj" />
+    <ProjectReference Include="..\Th.Music.Validators\Th.Music.Validators.csproj" />
+  </ItemGroup>
+
+</Project>
