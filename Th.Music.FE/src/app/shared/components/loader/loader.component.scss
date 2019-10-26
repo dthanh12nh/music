@@ -1,0 +1,21 @@
+.loader-container {
+    position: relative;
+}
+
+.loader-background {
+    z-index: 10;
+    background: #ababab;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+}
+
+.loader {
+    position: absolute;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

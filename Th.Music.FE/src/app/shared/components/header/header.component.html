@@ -1,0 +1,29 @@
+<mat-toolbar id="header">
+  <span><a id="title" routerLink="/">TH Music</a></span>
+  <div id="search">
+    <input type="text" placeholder="Search" [(ngModel)]="searchText" (keypress)="searchKeyPress($event)" />
+  </div>
+  <span>
+    <a class="login" routerLink="/login" *ngIf="!user">Login</a>
+    <button [matMenuTriggerFor]="menu" class="mat-button" *ngIf="!!user">
+      <span class="user-info">
+        {{user.fullName}}
+        <mat-icon class="icon">arrow_drop_down</mat-icon>
+      </span>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="navigate('user_information')">
+        <mat-icon>info</mat-icon>
+        <span>User Information</span>
+      </button>
+      <button mat-menu-item (click)="navigate('upload')">
+        <mat-icon>cloud_upload</mat-icon>
+        <span>Upload</span>
+      </button>
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Log Out</span>
+      </button>
+    </mat-menu>
+  </span>
+</mat-toolbar>

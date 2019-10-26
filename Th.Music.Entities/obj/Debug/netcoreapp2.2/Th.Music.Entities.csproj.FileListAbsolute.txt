@@ -1,9 +1,0 @@
-D:\Projects\Music\Th.Music.Entities\bin\Debug\netcoreapp2.2\Th.Music.Entities.deps.json
-D:\Projects\Music\Th.Music.Entities\bin\Debug\netcoreapp2.2\Th.Music.Entities.dll
-D:\Projects\Music\Th.Music.Entities\bin\Debug\netcoreapp2.2\Th.Music.Entities.pdb
-D:\Projects\Music\Th.Music.Entities\obj\Debug\netcoreapp2.2\Th.Music.Entities.csprojAssemblyReference.cache
-D:\Projects\Music\Th.Music.Entities\obj\Debug\netcoreapp2.2\Th.Music.Entities.csproj.CoreCompileInputs.cache
-D:\Projects\Music\Th.Music.Entities\obj\Debug\netcoreapp2.2\Th.Music.Entities.AssemblyInfoInputs.cache
-D:\Projects\Music\Th.Music.Entities\obj\Debug\netcoreapp2.2\Th.Music.Entities.AssemblyInfo.cs
-D:\Projects\Music\Th.Music.Entities\obj\Debug\netcoreapp2.2\Th.Music.Entities.dll
-D:\Projects\Music\Th.Music.Entities\obj\Debug\netcoreapp2.2\Th.Music.Entities.pdb

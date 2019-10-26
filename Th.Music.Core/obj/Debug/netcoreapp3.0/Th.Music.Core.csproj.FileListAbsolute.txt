@@ -1,0 +1,8 @@
+D:\Projects\Music\Th.Music.Core\bin\Debug\netcoreapp3.0\Th.Music.Core.deps.json
+D:\Projects\Music\Th.Music.Core\bin\Debug\netcoreapp3.0\Th.Music.Core.dll
+D:\Projects\Music\Th.Music.Core\bin\Debug\netcoreapp3.0\Th.Music.Core.pdb
+D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.AssemblyInfoInputs.cache
+D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.AssemblyInfo.cs
+D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.dll
+D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.pdb
+D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.csprojAssemblyReference.cache

@@ -1,23 +1,39 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>Th.Music</RootNamespace>
     <AssemblyName>Th.Music</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Th.Music.IRepositories\Th.Music.IRepositories.csproj" />
-    <ProjectReference Include="..\Th.Music.IServices\Th.Music.IServices.csproj" />
-    <ProjectReference Include="..\Th.Music.Repositories\Th.Music.Repositories.csproj" />
-    <ProjectReference Include="..\Th.Music.Services\Th.Music.Services.csproj" />
+    <Folder Include="Files\" />
+    <Folder Include="Images\Albums\" />
+    <Folder Include="Images\Songs\" />
+    <Folder Include="Images\Singers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Th.Music.BLL\Th.Music.BLL.csproj" />
+    <ProjectReference Include="..\Th.Music.Core\Th.Music.Core.csproj" />
+    <ProjectReference Include="..\Th.Music.DAL\Th.Music.DAL.csproj" />
   </ItemGroup>
 
 </Project>

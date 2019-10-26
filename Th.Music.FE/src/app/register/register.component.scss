@@ -1,0 +1,44 @@
+.register-card {
+    width: 300px;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.register-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-title {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.register-actions {
+    text-align: right;
+}
+
+.register-button {
+    width: 100%;
+}
+
+.register-footer {
+    font-size: 10pt;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.error {
+    color: red;
+    font-size: 10pt;
+}

@@ -1,0 +1,44 @@
+.login-card {
+    width: 300px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.login-actions {
+    text-align: right;
+}
+
+.login-button {
+    width: 100%;
+}
+
+.login-footer {
+    font-size: 10pt;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.error {
+    color: red;
+    font-size: 10pt;
+}

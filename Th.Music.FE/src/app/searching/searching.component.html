@@ -1,0 +1,6 @@
+<app-header></app-header>
+<ul>
+    <li *ngFor="let song of songs">
+        <a [routerLink]="['/playing', song.id]">{{song.title}}</a>
+    </li>
+</ul>

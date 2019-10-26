@@ -1,0 +1,33 @@
+#hot-albums {
+    margin: 50px;
+}
+
+.title {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.album-row {
+    display: flex;
+    justify-content: space-between;
+    margin: {
+        top: 30px;
+    }
+}
+
+.album-card {
+    width: 140px;
+    display: inline-block;
+}
+
+.album-image {
+    height: 140px;
+}
+
+.album-title {
+    font-size: 11pt;
+}
+
+.album-singer {
+    font-size: 9pt;
+}

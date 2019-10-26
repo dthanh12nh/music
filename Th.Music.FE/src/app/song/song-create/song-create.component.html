@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="upload-container">
+    <div class="upload-title">
+        Upload Music
+    </div>
+    <div>
+        <mat-form-field class="song-item">
+            <input matInput placeholder="Title" [(ngModel)]="song.title" />
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="song-item">
+            <input matInput placeholder="Singer" [(ngModel)]="song.singer" />
+        </mat-form-field>
+        <a href="/singer/create">Create a singer</a>
+    </div>
+    <div>
+        <mat-form-field class="song-item">
+            <input matInput placeholder="Album" [(ngModel)]="song.album" />
+        </mat-form-field>
+        <a href="/">Create a album</a>
+    </div>
+    <div class="file-container">
+        <input id="file" type="file" #avatarInput [(ngModel)]="song.file" />
+    </div>
+    <div class="button-row">
+        <button mat-raised-button color="primary" (click)="createSong(song)" class="create-button">Upload</button>
+    </div>
+</div>
