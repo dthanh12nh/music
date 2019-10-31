@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Th.Music.DAL.IRepositories
     public interface IBaseRepository<TEntity>
         where TEntity : BaseEntity
     {
+        DbSet<TEntity> DbSet { get; }
         TEntity GetById(Guid id);
         IQueryable<TEntity> GetAll();
         int Create(TEntity entity);

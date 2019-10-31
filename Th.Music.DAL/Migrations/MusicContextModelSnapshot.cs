@@ -19,6 +19,33 @@ namespace Th.Music.DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Th.Music.DAL.Entities.AlbumEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("CreatedUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("SingerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedUserId");
+
+                    b.HasIndex("SingerId");
+
+                    b.ToTable("Albums");
+                });
+
             modelBuilder.Entity("Th.Music.DAL.Entities.CommentEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -101,16 +128,24 @@ namespace Th.Music.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid?>("AlbumId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("CreatedUserId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("NonUnicodeTitle")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AlbumId");
 
                     b.HasIndex("CreatedUserId");
 
@@ -141,6 +176,21 @@ namespace Th.Music.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Th.Music.DAL.Entities.AlbumEntity", b =>
+                {
+                    b.HasOne("Th.Music.DAL.Entities.UserEntity", "CreatedUser")
+                        .WithMany()
+                        .HasForeignKey("CreatedUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Th.Music.DAL.Entities.SingerEntity", "Singer")
+                        .WithMany("Albums")
+                        .HasForeignKey("SingerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Th.Music.DAL.Entities.CommentEntity", b =>
@@ -184,6 +234,10 @@ namespace Th.Music.DAL.Migrations
 
             modelBuilder.Entity("Th.Music.DAL.Entities.SongEntity", b =>
                 {
+                    b.HasOne("Th.Music.DAL.Entities.AlbumEntity", "Album")
+                        .WithMany()
+                        .HasForeignKey("AlbumId");
+
                     b.HasOne("Th.Music.DAL.Entities.UserEntity", "CreatedUser")
                         .WithMany()
                         .HasForeignKey("CreatedUserId")

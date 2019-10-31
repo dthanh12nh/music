@@ -21,6 +21,12 @@ namespace Th.Music.DAL
                 .WithMany()
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<AlbumEntity>()
+                .HasOne(i => i.CreatedUser)
+                .WithMany()
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Restrict);
         }
 
         public DbSet<SongEntity> Songs { get; set; }
@@ -28,5 +34,6 @@ namespace Th.Music.DAL
         public DbSet<CommentEntity> Comments { get; set; }
         public DbSet<ReplyCommentEntity> ReplyComments { get; set; }
         public DbSet<SingerEntity> Singers { get; set; }
+        public DbSet<AlbumEntity> Albums { get; set; }
     }
 }

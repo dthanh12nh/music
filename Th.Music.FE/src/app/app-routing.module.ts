@@ -8,6 +8,7 @@ import { UserCreateComponent } from './user/user-create/user-create.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SingerCreateComponent } from './singer/singer-create/singer-create.component';
+import { AlbumCreateComponent } from './album/album-create/album-create.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'singer/create', component: SingerCreateComponent },
+  { path: 'album/create', component: AlbumCreateComponent },
 ];
 
 @NgModule({

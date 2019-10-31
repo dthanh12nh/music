@@ -10,8 +10,25 @@ namespace Th.Music.BLL.Mappings
         {
             return new SongDto
             {
-                Id = entity.Id,
-                Title = entity.Title
+                Id = entity.Id, 
+                Title = entity.Title,
+                AlbumId = entity.AlbumId,
+                SingerId = entity.Album.SingerId,
+                Singer = new SongSingerDto
+                {
+                    Id = entity.Album.SingerId,
+                    Name = entity.Album.Singer.Name
+                }
+            };
+        }
+
+        public static SongEntity ToEntity(this CreateSongDto dto)
+        {
+            return new SongEntity
+            {
+                Title = dto.Title,
+                AlbumId = dto.AlbumId.Value,
+                CreatedUserId = dto.CreatedUserId
             };
         }
 

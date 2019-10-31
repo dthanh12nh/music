@@ -6,7 +6,7 @@ namespace Th.Music.BLL.Validators.Song
     public class SongValidator
     {
         //Fields
-        SongDto _dto;
+        CreateSongDto _dto;
         List<string> _errors;
 
         //Properties
@@ -14,7 +14,7 @@ namespace Th.Music.BLL.Validators.Song
         public bool IsValid { get => _errors.Count == 0; }
 
         //Constructors
-        public SongValidator(SongDto dto)
+        public SongValidator(CreateSongDto dto)
         {
             _dto = dto;
             _errors = new List<string>();

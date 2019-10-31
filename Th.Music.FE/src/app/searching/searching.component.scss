@@ -1,0 +1,44 @@
+.song-image {
+    height: 40px;
+}
+
+.song-order {
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.song-row {
+    list-style: none;
+    display: flex;
+    justify-content: stretch;
+    height: 40px;
+    padding: 10px 0px;
+}
+
+.left-song {
+    display: flex;
+    align-items: center;
+}
+
+.right-song {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0px 10px 0px 5px;
+    width: 100%;
+}
+
+.name-song {
+    font-size: 11pt;
+    margin: 0px 5px;
+}
+
+.under-info-song {
+    font-size: 9pt;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

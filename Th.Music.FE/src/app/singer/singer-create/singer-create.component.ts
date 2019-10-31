@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { SingerModel } from 'src/app/shared/models/singer-model';
 import { SingerService } from 'src/app/shared/services/singer.service';
 import { Router } from '@angular/router';
@@ -9,7 +9,7 @@ import { LoaderService } from 'src/app/shared/services/loader.service';
   templateUrl: './singer-create.component.html',
   styleUrls: ['./singer-create.component.scss']
 })
-export class SingerCreateComponent implements OnInit {
+export class SingerCreateComponent implements OnInit, AfterViewInit  {
 
   model = new SingerModel();
   errors = [];
@@ -20,9 +20,17 @@ export class SingerCreateComponent implements OnInit {
     private _router: Router,
     private _loaderService: LoaderService,
     private _singerService: SingerService
-  ) { }
+  ) { 
+    this._loaderService.show();
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+    
+  }
+
+  ngAfterViewInit() {
+    this._loaderService.hide();
+  }
 
   create() {
     this._loaderService.show();
@@ -46,6 +54,8 @@ export class SingerCreateComponent implements OnInit {
         this._loaderService.hide();
       })
       .catch(e => {
+        this.errors = [];
+        this.errors.push(e.message);
         this._loaderService.hide();
       })
   }

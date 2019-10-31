@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SongModel } from '../models/song-model';
 import { Observable } from 'rxjs';
 import { Apis } from '../constants/apis';
+import { ResponseModel } from '../models/response-model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,16 +12,32 @@ export class SongService {
 
   constructor(private http: HttpClient) { }
 
-  create(data: FormData) : Observable<SongModel> {
-    let url = 'http://localhost:2019/songs'
-    return this.http.post<SongModel>(url, data);
+  getById(id: string) : Promise<SongModel>{
+    return this.http
+      .get<SongModel>(`${Apis.SONGS}/${id}`)
+      .toPromise();
   }
 
-  search(title: string): Observable<SongModel[]> {
+  create(data: FormData) : Promise<ResponseModel<SongModel>> {
+    let user = JSON.parse(localStorage.getItem('user'));
+    let token = user.token;
+    
+    return this.http
+      .post<ResponseModel<SongModel>>(Apis.SONGS, data, {
+        headers: new HttpHeaders({
+          'Authorization': 'Bearer ' + token
+        })
+      })
+      .toPromise();
+  }
+
+  search(title: string): Promise<SongModel[]> {
     let data = {
       title: title
     };
 
-    return this.http.get<SongModel[]>(Apis.SONGS_SEARCHING, { params: data });
+    return this.http
+      .get<SongModel[]>(Apis.SONGS_SEARCHING, { params: data })
+      .toPromise();
   }
 }

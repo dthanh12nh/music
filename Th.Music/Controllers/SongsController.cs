@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Th.Music.BLL.IServices;
 using Th.Music.Constants;
+using Th.Music.Mappings;
 using Th.Music.Models;
 
 namespace Th.Music.Controllers
@@ -24,15 +25,17 @@ namespace Th.Music.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get(Guid? id)
+        [Route("{id}")]
+        public IActionResult Get(Guid id)
         {
-            if (id == null)
-            {
-                return BadRequest(Messages.ID_MUST_NOT_BE_EMPTY);
-            }
+            var song = _songService.GetById(id);
 
-            var song = _songService.GetById(id.Value);
-            song.FileUrl = Path.Combine(Directory.GetCurrentDirectory(), "files", song.Id.ToString(), ".mp3");
+            if (song != null)
+            {
+                song.FileUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}/files/{song.Id}.mp3";
+                song.AvatarUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}/images/songs/{song.Id}.jpg";
+            }
+            
             return Ok(song);
         }
 
@@ -48,23 +51,35 @@ namespace Th.Music.Controllers
             var songs = _songService.Search(dto);
             foreach (var song in songs)
             {
-                song.FileUrl = Path.Combine(Directory.GetCurrentDirectory(), "files", $"{song.Id}.mp3");
+                song.FileUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}/files/{song.Id}.mp3";
+                song.AvatarUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.Value}/images/songs/{song.Id}.jpg";
             }
             
             return Ok(songs);
         }
 
         [HttpPost]
-        public IActionResult Add([FromForm]SongModel model)
+        public IActionResult Create([FromForm]CreateSongModel model)
         {
             var dto = model.ToDto();
-            var result = _songService.Add(dto);
+            dto.CreatedUserId = new Guid(User.Identity.Name);
+            var result = _songService.Create(dto);
 
-            var file = model.File;
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "Files", $"{dto.Id}{Path.GetExtension(file.FileName)}");
-            using (var stream = System.IO.File.Create(path))
+            if (result.Succeed)
             {
-                file.CopyTo(stream);
+                var avatar = model.Avatar;
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "Images", "Songs", $"{result.Data.Id}{Path.GetExtension(avatar.FileName)}");
+                using (var stream = System.IO.File.Create(path))
+                {
+                    avatar.CopyTo(stream);
+                }
+
+                var file = model.File;
+                path = Path.Combine(Directory.GetCurrentDirectory(), "Files", $"{result.Data.Id}{Path.GetExtension(file.FileName)}");
+                using (var stream = System.IO.File.Create(path))
+                {
+                    file.CopyTo(stream);
+                }
             }
 
             return Ok(result);

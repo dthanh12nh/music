@@ -5,24 +5,44 @@
     </div>
     <div>
         <mat-form-field class="song-item">
-            <input matInput placeholder="Title" [(ngModel)]="song.title" />
+            <input matInput placeholder="Song Title*" [(ngModel)]="song.title" />
         </mat-form-field>
     </div>
     <div>
         <mat-form-field class="song-item">
-            <input matInput placeholder="Singer" [(ngModel)]="song.singer" />
+            <mat-label>Singer*</mat-label>
+            <mat-select [(ngModel)]="song.singerId" (ngModelChange)="onChangeSinger($event)">
+                <mat-option *ngFor="let singer of allSingers" [value]="singer.id">
+                {{singer.name}}
+                </mat-option>
+            </mat-select>
         </mat-form-field>
-        <a href="/singer/create">Create a singer</a>
+        <div class="link-item">
+            <a href="/singer/create">Create a singer</a>
+        </div>
     </div>
     <div>
         <mat-form-field class="song-item">
-            <input matInput placeholder="Album" [(ngModel)]="song.album" />
+            <mat-label>Album*</mat-label>
+            <mat-select [(ngModel)]="song.albumId" [disabled]="isDisableAlbum">
+                <mat-option *ngFor="let album of albums" [value]="album.id">
+                {{album.name}}
+                </mat-option>
+            </mat-select>
         </mat-form-field>
-        <a href="/">Create a album</a>
+        <div class="link-item">
+            <a href="/album/create">Create a album</a>
+        </div>
     </div>
     <div class="file-container">
-        <input id="file" type="file" #avatarInput [(ngModel)]="song.file" />
+        <label class="text-avatar">Please choose a avatar</label>
+        <input id="file" type="file" accept=".jpg" #avatarInput />
     </div>
+    <div class="file-container">
+        <div>Please choose a music file</div>
+        <input id="file" type="file" accept=".mp3" #fileInput />
+    </div>
+    <p class="error" *ngFor="let error of errors">{{error}}</p>
     <div class="button-row">
         <button mat-raised-button color="primary" (click)="createSong(song)" class="create-button">Upload</button>
     </div>

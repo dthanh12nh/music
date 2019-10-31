@@ -20,36 +20,38 @@ namespace Th.Music.DAL.Repositories
             _dbSet = context.Set<TEntity>();
         }
 
-        public int Create(TEntity entity)
+        public DbSet<TEntity> DbSet { get => _dbSet; }
+
+        public virtual int Create(TEntity entity)
         {
             entity.CreatedDate = DateTime.Now;
             _dbSet.Add(entity);
             return SaveChanges();
         }
 
-        public int Delete(Guid id)
+        public virtual int Delete(Guid id)
         {
             var entity = GetById(id);
             return Delete(entity);
         }
 
-        public int Delete(TEntity entity)
+        public virtual int Delete(TEntity entity)
         {
             _dbSet.Remove(entity);
             return SaveChanges();
         }
 
-        public IQueryable<TEntity> GetAll()
+        public virtual IQueryable<TEntity> GetAll()
         {
             return _dbSet.AsQueryable();
         }
 
-        public TEntity GetById(Guid id)
+        public virtual TEntity GetById(Guid id)
         {
             return _dbSet.FirstOrDefault(m => m.Id == id);
         }
 
-        public int Update(TEntity entity)
+        public virtual int Update(TEntity entity)
         {
             _dbSet.Update(entity);
             return SaveChanges();        

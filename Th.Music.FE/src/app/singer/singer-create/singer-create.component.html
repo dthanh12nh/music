@@ -5,12 +5,12 @@
     </div>
     <div>
         <mat-form-field class="singer-item">
-            <input matInput placeholder="Singer Name" [(ngModel)]="model.name" />
+            <input matInput placeholder="Singer Name*" [(ngModel)]="model.name" />
         </mat-form-field>
     </div>
     <div class="file-container">
         <label class="text-avatar">Please choose a avatar</label>
-        <input id="file" type="file" accept="image/*" #avatarInput />
+        <input id="file" type="file" accept=".jpg" #avatarInput />
     </div>
     <p class="error" *ngFor="let error of errors">{{error}}</p>
     <div class="button-row">

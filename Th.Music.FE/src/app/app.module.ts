@@ -14,6 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { SlideshowModule } from 'ng-simple-slideshow';
@@ -33,11 +34,12 @@ import { SearchingComponent } from './searching/searching.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LoaderComponent } from './shared/components/loader/loader.component';
+import { HotSingersComponent } from './home/components/hot-singers/hot-singers.component';
+import { SingerCreateComponent } from './singer/singer-create/singer-create.component';
+import { AlbumCreateComponent } from './album/album-create/album-create.component';
 
 //services
 import { SongService } from './shared/services/song.service';
-import { HotSingersComponent } from './home/components/hot-singers/hot-singers.component';
-import { SingerCreateComponent } from './singer/singer-create/singer-create.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,8 @@ import { SingerCreateComponent } from './singer/singer-create/singer-create.comp
     RegisterComponent,
     LoaderComponent,
     HotSingersComponent,
-    SingerCreateComponent
+    SingerCreateComponent,
+    AlbumCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +76,7 @@ import { SingerCreateComponent } from './singer/singer-create/singer-create.comp
     MatListModule,
     MatCardModule,
     MatMenuModule,
+    MatSelectModule,
     MatProgressSpinnerModule,
     OverlayModule,
     SlideshowModule

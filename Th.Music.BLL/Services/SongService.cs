@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,92 +9,81 @@ using Th.Music.BLL.Mappings;
 using Th.Music.BLL.Validators.Song;
 using Th.Music.Core.Helpers;
 using Th.Music.Core.Response;
+using Th.Music.DAL;
 using Th.Music.DAL.IRepositories;
 
 namespace Th.Music.BLL.Services
 {
     public class SongService : BaseService, ISongService
     {
+        readonly MusicContext _context;
         readonly ISongRepository _songRepository;
 
-        public SongService(ISongRepository songRepository)
+        public SongService(
+            MusicContext context,
+            ISongRepository songRepository
+            )
         {
+            _context = context;
             _songRepository = songRepository;
         }
 
-        public Response<SongDto> Add(SongDto dto)
+        public SongDto GetById(Guid id)
         {
-            var validator = new SongValidator(dto);
-            if (validator.IsValid)
-            {
-                var entity = dto.ToEntity();
-                var entityId = _songRepository.Create(entity);
-                dto.Id = entity.Id;
+            return _songRepository
+                .DbSet
+                .Include(m => m.Album)
+                .Include("Album.Singer")
+                .FirstOrDefault(m => m.Id == id)
+                ?.ToDto();
+        }
 
-                if (entityId > 0)
-                {
-                    return Success<SongDto>("Create successfully");
-                }
-                else
-                {
-                    return Failure<SongDto>("System error");
-                }
-            }
-            else
+        public Response<SongDto> Create(CreateSongDto dto)
+        {
+            using var transaction = _context.Database.BeginTransaction();
+
+            var validator = new CreateSongValidator(dto, _context);
+            if (validator.Failed)
             {
+                transaction.Rollback();
                 return Failure<SongDto>(validator.Errors);
             }
+
+            var entity = dto.ToEntity();
+            entity.NonUnicodeTitle = StringHelper.RemoveUnicode(entity.Title);
+            _songRepository.Create(entity);
+
+            transaction.Commit();
+            _context.SaveChanges();
+
+            var returnedDto = entity.ToDto();
+            return Success("Create song successfully!", returnedDto);
         }
 
         public List<SongDto> Search(SearchSongDto dto)
         {
             var returnedSongs = new List<SongDto>();
-            var allSongs = _songRepository.GetAll();
+            var AllSongs = _songRepository.GetAll()
+                .Include(m => m.Album)
+                .Include("Album.Singer");
 
             if (dto.Title != null)
             {
                 //search with unicode characters
-                var words = dto.Title.Trim().ToLower().Split(' ');
-                foreach (var word in words)
-                {
-                    foreach (var song in allSongs)
-                    {
-                        var wordsOfTitle = song.Title.ToLower().Split(' ');
-                        if (wordsOfTitle.Contains(word))
-                        {
-                            if (!returnedSongs.Any(p => p.Id == song.Id))
-                            {
-                                returnedSongs.Add(song.ToDto());
-                            }
-                        }
-                    }
-                }
+                var unicodeSongs = AllSongs.Where(m => m.Title.ToLower().Contains(dto.Title.ToLower().Trim()));
 
                 //search without unicode characters
                 var nonUnicodeTitle = StringHelper.RemoveUnicode(dto.Title.Trim().ToLower());
-                words = nonUnicodeTitle.Split(' ');
-                foreach (var word in words)
-                {
-                    foreach (var song in allSongs)
-                    {
-                        var wordsOfTitle = StringHelper.RemoveUnicode(song.Title.ToLower()).Split(' ');
-                        if (wordsOfTitle.Contains(word))
-                        {
-                            if (!returnedSongs.Any(p => p.Id == song.Id))
-                            {
-                                returnedSongs.Add(song.ToDto());
-                            }
-                        }
-                    }
-                }
+                var nonUnicodeSongs = AllSongs.Where(m => m.NonUnicodeTitle.ToLower().Contains(nonUnicodeTitle));
+
+                returnedSongs = unicodeSongs
+                    .Union(nonUnicodeSongs)
+                    .Distinct()
+                    .ToDtos()
+                    .ToList();
             }
 
             return returnedSongs;
-        }
-
-        public SongDto GetById(Guid? id)
-        {
-            return _songRepository.GetById(id.Value).ToDto();
         }
     }
 }

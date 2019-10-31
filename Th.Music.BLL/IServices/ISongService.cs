@@ -8,8 +8,8 @@ namespace Th.Music.BLL.IServices
 {
     public interface ISongService
     {
-        Response<SongDto> Add(SongDto dto);
+        Response<SongDto> Create(CreateSongDto dto);
         List<SongDto> Search(SearchSongDto dto);
-        SongDto GetById(Guid? id);
+        SongDto GetById(Guid id);
     }
 }

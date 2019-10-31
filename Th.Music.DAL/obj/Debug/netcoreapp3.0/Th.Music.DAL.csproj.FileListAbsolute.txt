@@ -10,8 +10,8 @@ D:\Projects\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.runtimeconfi
 D:\Projects\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.runtimeconfig.dev.json
 D:\Projects\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.dll
 D:\Projects\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.pdb
+D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.csprojAssemblyReference.cache
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.AssemblyInfoInputs.cache
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.AssemblyInfo.cs
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.dll
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.pdb
-D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.csprojAssemblyReference.cache

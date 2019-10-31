@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using Th.Music.BLL.Dtos.Album;
 using Th.Music.BLL.Dtos.Singer;
 using Th.Music.BLL.IServices;
 using Th.Music.BLL.Mappings;
-using Th.Music.BLL.Validators;
+using Th.Music.BLL.Validators.Singer;
 using Th.Music.Core.Response;
 using Th.Music.DAL;
 using Th.Music.DAL.IRepositories;
@@ -22,6 +24,27 @@ namespace Th.Music.BLL.Services
         {
             _context = context;
             _singerRepository = singerRepository;
+        }
+
+        public List<ReturnedSingerDto> GetAll()
+        {
+            return 
+                _singerRepository
+                .GetAll()
+                .Select(m => m.ToReturnedDto())
+                .ToList();
+        }
+
+        public List<AlbumDto> GetAlbumsBySingerId(Guid singerId)
+        {
+            return
+                _singerRepository
+                .GetAll()
+                .Include(m => m.Albums)
+                .First(m => m.Id == singerId)
+                .Albums
+                .Select(m => m.ToDto())
+                .ToList();
         }
 
         public Response<ReturnedSingerDto> Create(CreateSingerDto dto)

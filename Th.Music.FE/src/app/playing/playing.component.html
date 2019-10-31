@@ -1,4 +1,7 @@
 <app-header></app-header>
-<audio id="audio-player" controls autoplay>
-    <source src="http://localhost:2019/files/{{id}}.mp3" type="audio/mpeg">
-</audio>
+<div class="container">
+    <img class="avatar" [src]="song.avatarUrl" *ngIf="!!song.avatarUrl" />
+    <audio id="audio-player" controls autoplay *ngIf="!!song.fileUrl">
+        <source [src]="song.fileUrl" type="audio/mpeg" />
+    </audio>
+</div>

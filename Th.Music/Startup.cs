@@ -14,6 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 using Th.Music.BLL.IServices;
 using Th.Music.BLL.Services;
 using Th.Music.Core;
+using Th.Music.Core.Constants;
 using Th.Music.DAL;
 using Th.Music.DAL.IRepositories;
 using Th.Music.DAL.Repositories;
@@ -35,18 +36,23 @@ namespace Th.Music
             services.AddScoped<ISongService, SongService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ISingerService, SingerService>();
+            services.AddScoped<IAlbumService, AlbumService>();
 
             //Inject repositories
             services.AddScoped<ISongRepository, SongRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISingerRepository, SingerRepository>();
+            services.AddScoped<IAlbumRepository, AlbumRepository>();
 
+            //Inject context
             services.AddScoped<MusicContext, MusicContext>();
+
+            //Register .net core version
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             //Config database connection
             services.AddDbContext<MusicContext>(options => 
-                options.UseSqlServer(Configuration.GetConnectionString("MusicContext")));
+                options.UseSqlServer(Configuration.GetConnectionString(Database.MusicContext)));
 
             //Allow all
             services.AddCors(o => o.AddDefaultPolicy(builder =>
@@ -57,7 +63,7 @@ namespace Th.Music
             }));
 
             // configure strongly typed settings objects
-            var appSettingsSection = Configuration.GetSection("AppSettings");
+            var appSettingsSection = Configuration.GetSection(Setting.AppSettings);
             services.Configure<AppSettings>(appSettingsSection);
 
             // configure jwt authentication
@@ -114,6 +120,12 @@ namespace Th.Music
                 FileProvider = new PhysicalFileProvider(
                 Path.Combine(Directory.GetCurrentDirectory(), "Files")),
                 RequestPath = "/Files"
+            });
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                Path.Combine(Directory.GetCurrentDirectory(), "Images")),
+                RequestPath = "/Images"
             });
             app.UseAuthentication();
             app.UseCors();
