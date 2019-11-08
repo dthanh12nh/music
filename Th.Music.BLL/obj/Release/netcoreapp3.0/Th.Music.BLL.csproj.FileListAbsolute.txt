@@ -1,0 +1,15 @@
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.BLL.deps.json
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.BLL.dll
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.BLL.pdb
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.Core.dll
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.DAL.dll
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.Core.pdb
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Th.Music.DAL.pdb
+D:\Projects\Music\Th.Music.BLL\bin\Release\netcoreapp3.0\Microsoft.AspNetCore.Mvc.Core.xml
+D:\Projects\Music\Th.Music.BLL\obj\Release\netcoreapp3.0\Th.Music.BLL.csprojAssemblyReference.cache
+D:\Projects\Music\Th.Music.BLL\obj\Release\netcoreapp3.0\Th.Music.BLL.AssemblyInfoInputs.cache
+D:\Projects\Music\Th.Music.BLL\obj\Release\netcoreapp3.0\Th.Music.BLL.AssemblyInfo.cs
+D:\Projects\Music\Th.Music.BLL\obj\Release\netcoreapp3.0\Th.Music.BLL.csproj.CopyComplete
+D:\Projects\Music\Th.Music.BLL\obj\Release\netcoreapp3.0\Th.Music.BLL.dll
+D:\Projects\Music\Th.Music.BLL\obj\Release\netcoreapp3.0\Th.Music.BLL.pdb

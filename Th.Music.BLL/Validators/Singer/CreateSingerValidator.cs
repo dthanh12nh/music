@@ -21,7 +21,7 @@ namespace Th.Music.BLL.Validators.Singer
                 var singer = context.Singers.FirstOrDefault(m => m.Name.ToLower() == dto.Name.Trim().ToLower());
                 if (singer != null)
                 {
-                    Errors.Add("Album Name existed!");
+                    Errors.Add("Singer Name existed!");
                 }
             }
 

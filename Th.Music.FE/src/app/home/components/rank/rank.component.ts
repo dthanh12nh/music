@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RankComponent implements OnInit {
 
-  songs= new Array(10);
+  songs: number[] = new Array(10);
 
-  constructor() { }
+  constructor() { 
+    for (let i = 0; i < 10; i++) {
+      this.songs[i] = i + 1;
+    }
+  }
 
   ngOnInit() {
   }

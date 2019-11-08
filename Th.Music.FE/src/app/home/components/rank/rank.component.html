@@ -1,19 +1,19 @@
 <div id="rank">
     <div id="vietnam-rank">
-        <div class="title-rank">V-POP Chart</div>
+        <div class="title-rank">Top 10 V-POP</div>
         <ul>
             <div *ngFor="let s of songs">
                 <hr />
                 <li class="song-row">
                     <div class="left-song">
-                        <span class="song-order">1</span>
-                        <a href="/">
+                        <span class="song-order">{{s}}</span>
+                        <a [routerLink]="['/playing', 'E058E788-5E50-49DA-6802-08D762C0E1C1']">
                             <img src="../../../../assets/images/EmGiOi.jpg" class="song-image" />
                         </a>
                     </div>
                     <div class="right-song">
                         <h5 class="name-song">
-                            <a href="/">Em Gì Ơi</a>
+                            <a [routerLink]="['/playing', 'E058E788-5E50-49DA-6802-08D762C0E1C1']">Em Gì Ơi</a>
                         </h5>
                         <div class="under-info-song">
                             <div class="singer-song">Jack; K-ICM</div>
@@ -29,20 +29,20 @@
         </ul>
     </div>
     <div id="us-uk-rank">
-        <div class="title-rank">US-UK Chart</div>
+        <div class="title-rank">Top 10 US-UK</div>
         <ul>
             <div *ngFor="let s of songs">
                 <hr />
                 <li class="song-row">
                     <div class="left-song">
-                        <span class="song-order">1</span>
-                        <a href="/">
+                        <span class="song-order">{{s}}</span>
+                        <a [routerLink]="['/playing', 'E058E788-5E50-49DA-6802-08D762C0E1C1']">
                             <img src="../../../../assets/images/EmGiOi.jpg" class="song-image" />
                         </a>
                     </div>
                     <div class="right-song">
                         <h5 class="name-song">
-                            <a href="/">Em Gì Ơi</a>
+                            <a [routerLink]="['/playing', 'E058E788-5E50-49DA-6802-08D762C0E1C1']">Em Gì Ơi</a>
                         </h5>
                         <div class="under-info-song">
                             <div class="singer-song">Jack; K-ICM</div>
@@ -58,20 +58,20 @@
     </ul>
 </div>
 <div id="korea-rank">
-    <div class="title-rank">K-POP Chart</div>
+    <div class="title-rank">Top 10 K-POP</div>
         <ul>
             <div *ngFor="let s of songs">
                 <hr />
                 <li class="song-row">
                     <div class="left-song">
-                        <span class="song-order">1</span>
-                        <a href="/">
+                        <span class="song-order">{{s}}</span>
+                        <a [routerLink]="['/playing', 'E058E788-5E50-49DA-6802-08D762C0E1C1']">
                             <img src="../../../../assets/images/EmGiOi.jpg" class="song-image" />
                         </a>
                     </div>
                     <div class="right-song">
                         <h5 class="name-song">
-                            <a href="/">Em Gì Ơi</a>
+                            <a [routerLink]="['/playing', 'E058E788-5E50-49DA-6802-08D762C0E1C1']">Em Gì Ơi</a>
                         </h5>
                         <div class="under-info-song">
                             <div class="singer-song">Jack; K-ICM</div>
