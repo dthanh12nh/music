@@ -21,17 +21,17 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 
 //components
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './shared/components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './home/components/banner/banner.component';
 import { RankComponent } from './home/components/rank/rank.component';
 import { HotAlbumsComponent } from './home/components/hot-albums/hot-albums.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { SongCreateComponent } from './song/song-create/song-create.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { PlayingComponent } from './playing/playing.component';
 import { SearchingComponent } from './searching/searching.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LoaderComponent } from './shared/components/loader/loader.component';
 import { HotSingersComponent } from './home/components/hot-singers/hot-singers.component';

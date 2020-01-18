@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Music\\Th.Music\\Th.Music.csproj": {}
+    "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music\\Th.Music.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj": {
+    "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
         "projectName": "Th.Music.BLL",
-        "projectPath": "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
+        "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
         "packagesPath": "C:\\Users\\dthan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Music\\Th.Music.BLL\\obj\\",
+        "outputPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
-                "projectPath": "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj"
+              "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
+                "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj"
               },
-              "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
-                "projectPath": "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj"
+              "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
+                "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj"
               }
             }
           }
@@ -63,23 +63,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
+    "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj",
+        "projectUniqueName": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj",
         "projectName": "Th.Music.Core",
-        "projectPath": "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj",
+        "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj",
         "packagesPath": "C:\\Users\\dthan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Music\\Th.Music.Core\\obj\\",
+        "outputPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -118,23 +124,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
+    "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj",
         "projectName": "Th.Music.DAL",
-        "projectPath": "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj",
+        "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj",
         "packagesPath": "C:\\Users\\dthan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Music\\Th.Music.DAL\\obj\\",
+        "outputPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -189,23 +201,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Music\\Th.Music\\Th.Music.csproj": {
+    "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music\\Th.Music.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Music\\Th.Music\\Th.Music.csproj",
+        "projectUniqueName": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music\\Th.Music.csproj",
         "projectName": "Th.Music",
-        "projectPath": "D:\\Projects\\Music\\Th.Music\\Th.Music.csproj",
+        "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music\\Th.Music.csproj",
         "packagesPath": "C:\\Users\\dthan\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Music\\Th.Music\\obj\\",
+        "outputPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -224,14 +242,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj": {
-                "projectPath": "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj"
+              "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj": {
+                "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj"
               },
-              "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
-                "projectPath": "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj"
+              "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
+                "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj"
               },
-              "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
-                "projectPath": "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj"
+              "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
+                "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj"
               }
             }
           }
@@ -289,6 +307,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.2, 3.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -297,7 +325,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

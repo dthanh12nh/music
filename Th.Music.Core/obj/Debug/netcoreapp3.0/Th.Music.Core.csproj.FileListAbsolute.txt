@@ -6,3 +6,11 @@ D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.AssemblyIn
 D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.dll
 D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.pdb
 D:\Projects\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.csprojAssemblyReference.cache
+C:\Users\dthan\source\repos\Music\Th.Music.Core\bin\Debug\netcoreapp3.0\Th.Music.Core.deps.json
+C:\Users\dthan\source\repos\Music\Th.Music.Core\bin\Debug\netcoreapp3.0\Th.Music.Core.dll
+C:\Users\dthan\source\repos\Music\Th.Music.Core\bin\Debug\netcoreapp3.0\Th.Music.Core.pdb
+C:\Users\dthan\source\repos\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.csprojAssemblyReference.cache
+C:\Users\dthan\source\repos\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.AssemblyInfoInputs.cache
+C:\Users\dthan\source\repos\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.AssemblyInfo.cs
+C:\Users\dthan\source\repos\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.dll
+C:\Users\dthan\source\repos\Music\Th.Music.Core\obj\Debug\netcoreapp3.0\Th.Music.Core.pdb

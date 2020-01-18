@@ -4900,11 +4900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
       "projectName": "Th.Music.BLL",
-      "projectPath": "D:\\Projects\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
+      "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\Th.Music.BLL.csproj",
       "packagesPath": "C:\\Users\\dthan\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Music\\Th.Music.BLL\\obj\\",
+      "outputPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4923,11 +4923,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
-              "projectPath": "D:\\Projects\\Music\\Th.Music.Core\\Th.Music.Core.csproj"
+            "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj": {
+              "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.Core\\Th.Music.Core.csproj"
             },
-            "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
-              "projectPath": "D:\\Projects\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj"
+            "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj": {
+              "projectPath": "C:\\Users\\dthan\\source\\repos\\Music\\Th.Music.DAL\\Th.Music.DAL.csproj"
             }
           }
         }
@@ -4956,12 +4956,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

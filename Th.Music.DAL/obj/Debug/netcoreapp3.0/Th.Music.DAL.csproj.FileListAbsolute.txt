@@ -15,3 +15,13 @@ D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.AssemblyInfo
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.AssemblyInfo.cs
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.dll
 D:\Projects\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.pdb
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.deps.json
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.runtimeconfig.json
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.runtimeconfig.dev.json
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.dll
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\bin\Debug\netcoreapp3.0\Th.Music.DAL.pdb
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.csprojAssemblyReference.cache
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.AssemblyInfoInputs.cache
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.AssemblyInfo.cs
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.dll
+C:\Users\dthan\source\repos\Music\Th.Music.DAL\obj\Debug\netcoreapp3.0\Th.Music.DAL.pdb

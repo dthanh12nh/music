@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { SongCreateComponent } from './song/song-create/song-create.component';
 import { PlayingComponent } from './playing/playing.component';
 import { SearchingComponent } from './searching/searching.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SingerCreateComponent } from './singer/singer-create/singer-create.component';
 import { AlbumCreateComponent } from './album/album-create/album-create.component';
