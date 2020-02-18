@@ -1,7 +1,0 @@
-<app-header></app-header>
-<div class="container">
-    <img class="avatar" [src]="song.avatarUrl" *ngIf="!!song.avatarUrl" />
-    <audio id="audio-player" controls autoplay *ngIf="!!song.fileUrl">
-        <source [src]="song.fileUrl" type="audio/mpeg" />
-    </audio>
-</div>

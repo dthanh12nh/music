@@ -1,0 +1,7 @@
+content area of "Ba" is 164 pixels, therein, the descender is 54 pixels, the ascender is 110 pixels
+virtual area of "Ba" is 200 pixels, its half is 18 pixels, the descender is 72, the ascender is 128
+
+content area of "Tao nè" is 1229/64 (19.2) pixels, therein, the descender is 4 pixels, the ascender is 973/64 (15.2) pixels
+virtual area of "Tao nè" is 200 pixels, its half is 11571/128 (90.4) pixels, the descender is 12083/128 (94.4), the ascender is 13517/128 (105.6)
+
+=> Height of the line box is 128 + 12083/128 = 28467/128 (222.4)
