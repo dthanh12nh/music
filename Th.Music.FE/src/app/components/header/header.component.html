@@ -3,12 +3,29 @@
         <a href="/">TH Music</a>
     </div>
     <div class="search">
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="Search..." class="textbox" />
     </div>
     <div class="nav">
-        
+        <a href="#">Songs</a>
+        <a href="#">Videos</a>
+        <a href="#">Singers</a>
+        <a href="#">Ranking</a>
     </div>
     <div class="authentication">
-        <a href="#">Log In</a>
+        <i class="fas fa-user-circle fa-2x"></i>
+        <a href="#" class="authentication-login">
+            Log In
+        </a>
+        <a href="javascript:void(0);" class="authentication-dropdown" (click)="toggleAuthenticationMenu()">
+            <i class="arrow-down"></i>
+        </a>
+        <ul class="authentication-menu" *ngIf="showAuthenticationMenu">
+            <li>
+                <a href="javascript:void(0);" (click)="toggleRegisterPopup()">Register</a>
+            </li>
+        </ul>
     </div>
+
+    <!-- Register Popup -->
+    <app-register *ngIf="showRegisterPopup"></app-register>
 </header>

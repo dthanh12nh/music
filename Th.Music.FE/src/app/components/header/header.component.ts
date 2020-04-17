@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  showAuthenticationMenu = false;
+  showRegisterPopup = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleAuthenticationMenu(): void {
+    this.showAuthenticationMenu = !this.showAuthenticationMenu;
+  }
+
+  toggleRegisterPopup() {
+    this.showRegisterPopup = !this.showRegisterPopup;
   }
 
 }
